@@ -1,11 +1,46 @@
 import turtle
 import random
+from turtle import *
+from random import randint
 
-##Bhupendra
-
-turtle.bgcolor('light blue')
+# turtle.bgcolor('light blue')
 t1 = turtle.Turtle()
 t2 = turtle.Turtle()
+
+### background area ###
+#Page setup
+setup(800, 500)
+speed(0)
+bgcolor("midnightblue")
+
+# Function to draw one star
+def star():
+    color("yellow")
+    begin_fill()
+    for i in range(5):
+        forward(10)
+        right(144)
+    end_fill()
+hideturtle()
+
+# Draw multiple stars at random area
+for i in range(40):
+    x = randint(-550, 550)
+    y = randint(-50, 400)
+    star()
+    penup()
+    goto(x, y)
+    pendown()
+    
+# Draw Moon 
+penup()
+goto(-500, -270)
+pendown()
+color("yellow")
+begin_fill()
+circle(30)
+end_fill()
+hideturtle()
 
 t1.speed(19)
 
@@ -15,7 +50,7 @@ def randomLine(x, y, a, b):
             t1.fd(y)
             
 ###################### sea ###############
-t1.color('black', 'blue')
+t1.color('black', 'aqua') # water color is aqua
 t1.pu()
 t1.goto(230, -350)
 t1.seth(90)
@@ -152,22 +187,17 @@ def boat(x, y):
     t1.end_fill()
     
     
-    
+    # sys.exit()
     
     
     t1.begin_fill()
     t1.end_fill()
-    
-   
-    
-    
-    
-
-    
-    
     t1.hideturtle()
     
-    
+
+
+
+
 
 boat(-300, -250)
             
@@ -258,7 +288,7 @@ def cloud(x, y):
     t1.goto(x, y)
     t1.pd()
     t1.begin_fill()
-    t1.circle(10, 180)
+    t1.circle(20, 270)
     t1.rt(100)
     t1.circle(15, 150)
     t1.rt(100)
@@ -282,12 +312,6 @@ cloud(200, 250)
 cloud(300, 40)
 cloud(550, 40)
 cloud(-300, 100)
-
-
-    
-    
-    
-    
 
 
 
@@ -508,8 +532,6 @@ def tower(x, y):
     t2.fd(340)
      
      
-     
-   
     # t1.hideturtle()
     # t2.hideturtle()
     
