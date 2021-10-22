@@ -6,10 +6,9 @@ from random import randint
 # turtle.bgcolor('light blue')
 t1 = turtle.Turtle()
 t2 = turtle.Turtle()
-#CHANGES
-#cnanges-2-gitgb
+
 ### background area ###
-#Page setup
+#Updated by Bhupendra
 setup(800, 500)
 speed(0)
 bgcolor("midnightblue")
