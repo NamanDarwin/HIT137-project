@@ -7,6 +7,7 @@ from random import randint
 t1 = turtle.Turtle()
 t2 = turtle.Turtle()
 #CHANGES
+#cnanges-2-gitgb
 ### background area ###
 #Page setup
 setup(800, 500)
