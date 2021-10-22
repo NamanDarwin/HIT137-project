@@ -6,7 +6,7 @@ from random import randint
 # turtle.bgcolor('light blue')
 t1 = turtle.Turtle()
 t2 = turtle.Turtle()
-
+#CHANGES
 ### background area ###
 #Page setup
 setup(800, 500)
